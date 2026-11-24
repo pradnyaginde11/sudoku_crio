@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.board {
+  width: 360px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 2px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.invalid {
+  background-color: #ffb3b3;
+  border: 2px solid red;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
